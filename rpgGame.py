@@ -106,6 +106,7 @@ class Medic(Character):
     def __init__(self, name, health, power,armor,evade, bounty):
         super(Medic,self).__init__(name, health, power,armor,evade, bounty)
     def heal(self):
+        # random 20% chance of heal
         roll = random.randint(1,10) 
         if roll in range (1,3):
             self.health += 2
